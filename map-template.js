@@ -21,7 +21,7 @@ export default `
         // create the map
         tt.setProductInfo('TomTom Maps React Native Demo', '1.0');
         let map = tt.map({
-            key: 'Vn26cA8knt2E8sl0WBEWvAgWGRUf59mm',
+            key: '<API KEY HERE>',
             container: 'map',
             center: [-121.913, 37.361],
             zoom: 15

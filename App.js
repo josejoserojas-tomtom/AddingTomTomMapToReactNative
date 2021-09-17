@@ -10,7 +10,7 @@ export default function App() {
 
   const onButtonPress = () => {
     const [lng, lat] = mapCenter.split(",");
-    this.webref.injectJavaScript(`map.setCenter([${parseFloat(lng)}, ${parseFloat(lat)}])`);
+    webRef.injectJavaScript(`map.setCenter([${parseFloat(lng)}, ${parseFloat(lat)}])`);
   }
 
   const handleMapEvent = (event) => {
@@ -27,7 +27,7 @@ export default function App() {
         <Button title="Set Center" onPress={onButtonPress}></Button>
       </View>
       <WebView
-        ref={(r) => (this.webref = r)}
+        ref={(r) => (webRef = r)}
         onMessage={handleMapEvent}
         style={styles.map}
         originWhitelist={['*']}
